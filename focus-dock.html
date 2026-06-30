@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudySync Focus Dock MVP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <span class="logo-mark">🎓</span>
+        <span>
+          <strong>StudySync</strong>
+          <small>Focus Dock</small>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#how">How It Works</a>
+        <a href="index.html#services">Software MVP</a>
+        <a href="focus-dock.html">Product MVP</a>
+        <a href="index.html#survey">Survey</a>
+      </div>
+      <div class="nav-actions">
+        <a class="btn secondary small" href="app.html">Planner MVP</a>
+        <a class="btn primary small" href="index.html">← Back to Landing Page</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-page-hero">
+      <div class="product-page-card">
+        <span class="pill">Physical Product MVP</span>
+        <h1>Organize your desk. Focus your plan.</h1>
+        <p class="lead">
+          StudySync Focus Dock is a low-fidelity physical product MVP that extends the StudySync planner into a student's actual workspace. The product organizes phones, notebooks, pens, flashcards, cables, reminders, and app access in one compact study station.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSdJgZQR3I02ws2I6Ml8LDnDIbY3cP5XOLioHoiaAB8LuWXSCg/viewform?usp=header">Give Product Feedback</a>
+          <a class="btn secondary" href="app.html">Try the Planner MVP</a>
+        </div>
+        <div class="metrics">
+          <div><strong>4.6/5</strong><span>Usefulness rating</span></div>
+          <div><strong>80%</strong><span>Likely to purchase</span></div>
+          <div><strong>100%</strong><span>Helped organize</span></div>
+        </div>
+      </div>
+      <div class="product-page-render">
+        <img src="focus-dock-render.png" alt="StudySync Focus Dock product render">
+      </div>
+    </section>
+
+    <section class="product-panel">
+      <div class="section-heading">
+        <span class="label">Product Features</span>
+        <h2>Built around real study habits</h2>
+        <p>The Focus Dock is designed for students who need a simple place to keep core study materials visible, accessible, and connected to their weekly plan.</p>
+      </div>
+      <div class="product-feature-grid">
+        <article><strong>📱 Adjustable Phone Stand</strong><span>Positions the phone for planner access without letting it take over the workspace.</span></article>
+        <article><strong>📒 Notebook / Tablet Slot</strong><span>Holds notebooks, tablets, folders, or planners in a central location.</span></article>
+        <article><strong>✏️ Pen Organizer</strong><span>Keeps pens, highlighters, and markers upright and easy to reach.</span></article>
+        <article><strong>📝 Whiteboard Strip</strong><span>Creates a quick space for reminders, deadlines, and study priorities.</span></article>
+        <article><strong>🗂️ Flashcard Holder</strong><span>Supports review cards and short study sessions without spreading materials across the desk.</span></article>
+        <article><strong>🔌 Cable Management</strong><span>Routes charging cables neatly to reduce clutter and improve the study setup.</span></article>
+      </div>
+    </section>
+
+    <section class="product-panel">
+      <div class="section-heading">
+        <span class="label">Survey Validation</span>
+        <h2>What early feedback showed</h2>
+        <p>Initial feedback from 10 responses showed strong interest in a student-focused organizer that pairs physical workspace structure with StudySync's digital planning tools.</p>
+      </div>
+      <div class="product-validation-grid">
+        <div><strong>70%</strong><span>College students</span></div>
+        <div><strong>60%</strong><span>Definitely improves organization</span></div>
+        <div><strong>80%</strong><span>Likely to purchase</span></div>
+        <div><strong>$25–35</strong><span>Most common price range</span></div>
+        <div><strong>4.6/5</strong><span>Average usefulness</span></div>
+      </div>
+    </section>
+
+    <section class="product-panel product-form-grid">
+      <form id="dockForm" class="waitlist-form product-test-form">
+        <span class="label">Interactive Concept Test</span>
+        <h2>Customize a Focus Dock setup</h2>
+
+        <label for="studentType">Student type</label>
+        <select id="studentType" name="studentType" required>
+          <option value="" disabled selected>Select a student type</option>
+          <option value="college student">College student</option>
+          <option value="high school student">High school student</option>
+          <option value="graduate student">Graduate student</option>
+        </select>
+
+        <label for="deskIssue">Biggest desk problem</label>
+        <select id="deskIssue" name="deskIssue" required>
+          <option value="" disabled selected>Select the biggest issue</option>
+          <option value="desk clutter">Desk clutter</option>
+          <option value="phone distractions">Phone distractions</option>
+          <option value="missing supplies">Missing supplies</option>
+          <option value="messy charging cables">Messy charging cables</option>
+        </select>
+
+        <label>Most useful features</label>
+        <div class="check-grid">
+          <label><input type="checkbox" value="phone stand" checked>Phone stand</label>
+          <label><input type="checkbox" value="notebook/tablet holder" checked>Notebook/tablet holder</label>
+          <label><input type="checkbox" value="cable management" checked>Cable management</label>
+          <label><input type="checkbox" value="storage drawer">Storage drawer</label>
+          <label><input type="checkbox" value="whiteboard strip">Whiteboard strip</label>
+          <label><input type="checkbox" value="flashcard holder">Flashcard holder</label>
+        </div>
+
+        <label for="price">Expected price range</label>
+        <select id="price" name="price" required>
+          <option value="" disabled selected>Select an expected price</option>
+          <option value="$15–25">$15–25</option>
+          <option value="$25–35">$25–35</option>
+          <option value="$35–50">$35–50</option>
+        </select>
+
+        <button class="btn primary full" type="submit">Generate Product Recommendation</button>
+      </form>
+
+      <section class="result-panel" aria-live="polite">
+        <span class="label">Recommended Setup</span>
+        <h2>Your Focus Dock Concept</h2>
+        <div id="emptyState" class="empty-state">
+          <div>🧩</div>
+          <p>Your recommended product setup will appear here after you submit the concept test.</p>
+        </div>
+        <div id="dockResult" class="hidden"></div>
+        <a id="surveyButton" class="btn primary hidden" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSdJgZQR3I02ws2I6Ml8LDnDIbY3cP5XOLioHoiaAB8LuWXSCg/viewform?usp=header">Take Feedback Survey</a>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>StudySync Focus Dock Physical Product MVP | Focus. Plan. Achieve.</p>
+  </footer>
+
+  <script src="focus-dock.js"></script>
+</body>
+</html>
